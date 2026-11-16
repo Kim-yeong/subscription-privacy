@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>구독관리 개인정보처리방침</title>
+<style>
+  :root { color-scheme: light dark; --fg:#191f28; --muted:#6b7684; --bg:#ffffff; --card:#f2f4f6; --line:#e5e8eb; --accent:#2f7beb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#f2f4f6; --muted:#9ea7b3; --bg:#17171c; --card:#222229; --line:#33333b; --accent:#6aa5ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; max-width: 720px; padding: 28px 16px 56px;
+    font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    line-height: 1.75; color: var(--fg); background: var(--bg); word-break: keep-all;
+  }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 36px 0 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+  p, li { font-size: 0.95rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; margin: 0 0 20px; }
+  .summary { background: var(--card); border-radius: 14px; padding: 14px 18px; margin: 18px 0; }
+  .summary ul { margin: 6px 0 0; padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.88rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--card); white-space: nowrap; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+
+<h1>구독관리 개인정보처리방침</h1>
+<p class="meta">앱 이름: 구독관리: 결제일 알림, 구독 서비스 관리 · 시행일: 2026년 11월 16일</p>
+
+<p>
+  「구독관리: 결제일 알림, 구독 서비스 관리」(이하 "앱")는 사용자가 이용 중인 구독 서비스를 기록하고
+  결제일을 알려 주는 앱입니다. 이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.
+</p>
+
+<div class="summary">
+  <strong>한눈에 보기</strong>
+  <ul>
+    <li>회원가입과 로그인이 없습니다.</li>
+    <li>앱이 다루는 모든 정보는 사용자의 기기 안에서만 처리되며, 개발자나 외부 서버로 전송되지 않습니다.</li>
+    <li>광고, 사용자 분석(통계) 도구, 인앱 결제가 없습니다.</li>
+    <li>앱을 삭제하면 앱에 저장된 정보가 모두 삭제됩니다.</li>
+  </ul>
+</div>
+
+<h2>1. 처리하는 정보와 이용 목적</h2>
+<div class="wrap">
+<table>
+  <tr><th>정보</th><th>이용 목적</th><th>저장 위치</th></tr>
+  <tr>
+    <td>사용자가 직접 입력한 구독 정보<br>(서비스 이름, 금액, 통화, 결제 주기, 결제일, 분류, 메모)</td>
+    <td>구독 목록, 결제 예정일, 지출 통계 표시</td>
+    <td>기기 내부 데이터베이스</td>
+  </tr>
+  <tr>
+    <td>설치된 구독 서비스 앱 여부와 최초 설치 시각</td>
+    <td>구독을 추가할 때 설치된 구독 서비스 앱을 보여 주기 위해 사용합니다. 앱에 내장된 구독 서비스 앱 목록에 있는 앱만 확인하며, 기기에 설치된 앱 전체 목록은 조회하거나 수집하지 않습니다.</td>
+    <td>저장하지 않음 (앱 실행 중 화면 표시에만 임시 사용)</td>
+  </tr>
+  <tr>
+    <td>앱 사용 기록 (선택)<br>사용자가 기기 설정에서 '사용 정보 접근'을 허용한 경우에만, 위 구독 서비스 앱의 최근 사용 시점과 최근 일정 기간의 사용 일수</td>
+    <td>최근 사용한 구독 앱을 먼저 보여 주기 위해 사용합니다.</td>
+    <td>저장하지 않음 (앱 실행 중 메모리에서만 잠시 사용)</td>
+  </tr>
+  <tr>
+    <td>알림 설정 (알림 시각, 알림 시점)</td>
+    <td>결제일 알림 표시</td>
+    <td>기기 내부 설정 저장소</td>
+  </tr>
+  <tr>
+    <td>백업 파일 (사용자가 '내보내기'를 선택한 경우)<br>구독 정보가 담긴 JSON 파일</td>
+    <td>구독 정보를 파일로 보관하거나 다른 기기로 옮기기 위해 사용합니다.</td>
+    <td>사용자가 공유 화면에서 직접 선택한 앱·위치</td>
+  </tr>
+</table>
+</div>
+<p>
+  '가져오기'를 선택하면 사용자가 직접 고른 백업 파일만 읽어 구독 정보를 복원합니다.
+</p>
+
+<h2>2. 앱 권한</h2>
+<div class="wrap">
+<table>
+  <tr><th>권한</th><th>사용 목적</th><th>필수 여부</th></tr>
+  <tr>
+    <td>사용 정보 접근</td>
+    <td>구독 서비스 앱의 최근 사용 여부를 확인해, 최근 사용한 구독 앱을 먼저 보여 줍니다.</td>
+    <td>선택. 허용하지 않아도 설치된 구독 앱 표시와 직접 추가를 포함한 모든 기능을 사용할 수 있습니다. 기기 설정의 '사용 정보 접근'에서 언제든 해제할 수 있습니다.</td>
+  </tr>
+  <tr>
+    <td>알림</td>
+    <td>결제일 알림을 표시합니다.</td>
+    <td>선택. 허용하지 않으면 알림만 받을 수 없습니다.</td>
+  </tr>
+  <tr>
+    <td>부팅 완료 수신</td>
+    <td>기기를 다시 시작한 뒤 예약된 결제일 알림을 다시 설정합니다.</td>
+    <td>자동 부여 (별도 동의 절차 없음)</td>
+  </tr>
+</table>
+</div>
+
+<h2>3. 보유 기간과 파기</h2>
+<p>
+  앱에 저장된 정보는 사용자의 기기 안에만 보관됩니다. 사용자가 앱에서 구독 정보를 삭제하면 해당 정보가 삭제되고,
+  앱을 삭제하면 앱에 저장된 모든 정보가 함께 삭제됩니다. 사용자가 내보낸 백업 파일은 사용자가 직접 보관하는 파일이므로
+  사용자가 직접 삭제해야 합니다.
+</p>
+
+<h2>4. 제3자 제공과 처리 위탁</h2>
+<p>
+  앱은 사용자의 정보를 개발자 또는 제3자의 서버로 전송하지 않으며, 제3자에게 제공하거나 처리를 위탁하지 않습니다.
+  광고, 사용자 분석 도구, 인앱 결제 기능을 사용하지 않습니다.
+</p>
+
+<h2>5. 정보 보호를 위한 조치</h2>
+<p>
+  앱의 데이터는 안드로이드가 앱별로 분리해 제공하는 저장 공간에 보관되며, 외부로 전송하는 기능이 없습니다.
+  사용자가 백업 파일을 다른 앱이나 클라우드로 공유하는 경우, 그 이후의 보관과 보호는 사용자가 선택한 서비스의
+  정책을 따릅니다.
+</p>
+
+<h2>6. 이용자의 권리</h2>
+<ul>
+  <li>앱 안에서 구독 정보를 언제든 확인, 수정, 삭제할 수 있습니다.</li>
+  <li>기기 설정에서 사용 정보 접근 권한과 알림 권한을 언제든 허용하거나 해제할 수 있습니다.</li>
+  <li>앱을 삭제하면 앱에 저장된 모든 정보가 삭제됩니다.</li>
+</ul>
+
+<h2>7. 아동의 개인정보</h2>
+<p>
+  앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 별도로 수집하지 않습니다.
+</p>
+
+<h2>8. 방침의 변경</h2>
+<p>
+  이 방침이 변경되면 이 페이지에 변경 내용과 시행일을 게시합니다.
+</p>
+
+<h2>9. 문의</h2>
+<ul>
+  <li>개발자: [개발자 이름]</li>
+  <li>이메일: [문의 이메일]</li>
+</ul>
+
+</body>
+</html>
